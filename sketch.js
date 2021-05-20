@@ -28,7 +28,7 @@ function setup(){
     ball = createSprite(random(20,750),100, 40,40);
     ball.shapeColor = "white";
     // add velocityX and velocityY
-    ball.velocityX = 5;
+    ball.velocityX = 7;
     ball.velocityY = -4;
 
 }
@@ -55,7 +55,7 @@ function draw() {
        //set velocityX and velocityY of ball as 0
        ball.velocityX = 0;
        ball.velocityY = 0;
-       music.play();
+       music.pause();
     }
 
     //bounce off ball from the block4
@@ -65,10 +65,6 @@ function draw() {
     }
     edges=createEdgeSprites();
     ball.bounceOff(edges);
-    ball.bounceOff(block1);
-    ball.bounceOff(block2);
-    ball.bounceOff(block3);
-    ball.bounceOff(block4);
 
     drawSprites();
 }
