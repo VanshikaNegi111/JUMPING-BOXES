@@ -55,7 +55,7 @@ function draw() {
        //set velocityX and velocityY of ball as 0
        ball.velocityX = 0;
        ball.velocityY = 0;
-       music.pause();
+       music.stop();
     }
 
     //bounce off ball from the block4
